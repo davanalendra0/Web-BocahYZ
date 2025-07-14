@@ -1,0 +1,79 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header Container */
+.header {
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navigation Styling */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+/* Hover & Active State */
+.nav-menu a:hover,
+.nav-menu a.current {
+  color: teal;
+  font-weight: bold;
+}
+
+/* Burger menu icon */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
