@@ -12,7 +12,7 @@ body {
 
 /* Header Container */
 .header {
-  background-color: #fff;
+  background-color: #363636;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  color: #333;
+  color: lightgray;
   font-size: 16px;
   transition: 0.3s ease;
 }
@@ -43,7 +43,7 @@ body {
 /* Hover & Active State */
 .nav-menu a:hover,
 .nav-menu a.current {
-  color: teal;
+  color: white;
   font-weight: bold;
 }
 
@@ -76,4 +76,50 @@ body {
   .menu-btn {
     display: block;
   }
+}
+
+.home {
+  background-image: url('../asset/img/home.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(98, 0, 255, 0.6), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.home-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.home-overlay h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.home-overlay h1 {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.home-overlay p {
+  font-size: 14px;
+  letter-spacing: 6px;
+  margin-top: 10px;
+  font-weight: 300;
 }
