@@ -124,3 +124,41 @@ body {
   margin-top: 10px;
   font-weight: 300;
 }
+
+/* Section Stat */
+.statistik {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+
+.stat-box {
+  width: 250px;
+  border: 2px solid #28a790;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  font-weight: 500;
+}
