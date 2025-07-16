@@ -78,6 +78,7 @@ body {
   }
 }
 
+/* overlay */
 .home {
   background-image: url('../asset/img/home.JPG');
   background-size: cover;
