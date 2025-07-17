@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==== Swiper Gallery ====
-  new Swiper('.gallery-slider', {
+  new Swiper('.galeri-slider', {
     loop: true,
     autoplay: {
       delay: 2300,
