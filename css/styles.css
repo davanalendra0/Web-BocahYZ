@@ -415,3 +415,61 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.anggota-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* Container grid */
+.anggota-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.anggota-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  aspect-ratio: 4 / 5;
+}
+
+.anggota-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.anggota-card:hover img {
+  transform: scale(1.05);
+}
+
+.anggota-nama {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* lapisan gelap */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.anggota-card:hover .anggota-nama {
+  opacity: 1;
+}
