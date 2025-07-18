@@ -103,6 +103,7 @@ body {
   z-index: 2;
   text-align: center;
   color: white;
+  cursor: default;
 }
 
 .home-overlay h4 {
@@ -225,6 +226,7 @@ body {
   margin-bottom: 20px;
   color: #fff;
   text-align: center;
+  cursor: default;
 }
 
 .about-text p {
@@ -309,6 +311,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px;
+  cursor: default;
 }
 
 .footer-logo img {
