@@ -487,3 +487,63 @@ body {
 .anggota-card:hover .anggota-nama {
   opacity: 1;
 }
+
+.profile-orang {
+  background: #1c1c1c;
+  color: white;
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.container-profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.info-profile {
+  flex: 1;
+}
+
+.info-profile .role {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.info-profile h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.sosial-link {
+  margin-top: 15px;
+}
+
+.sosial-link a {
+  background: red;
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.sosial-link a:hover {
+  transform: scale(1.1);
+}
