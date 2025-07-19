@@ -41,7 +41,7 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  color: #cccccc;
+  color: white;
   font-size: 16px;
   transition: 0.3s ease;
 }
@@ -67,7 +67,7 @@ body {
     position: absolute;
     top: 70px;
     right: 30px;
-    background-color: #1f1f1f;
+    background-color: #222;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
@@ -177,7 +177,7 @@ body {
 /* section gallery */
 .galeri-section {
   background: #1a1a1a;
-  padding: 60px 20px;
+  padding: 60px 20px 80px;
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ body {
 .about-section {
   background-color: #111;
   color: #f0f0f0;
-  padding: 60px 20px;
+  padding: 60px 20px 80px;
 }
 
 .about-content {
@@ -287,6 +287,13 @@ body {
   line-height: 1.6;
   margin-bottom: 15px;
   color: #ccc;
+}
+
+@media (max-width: 480px) {
+  .about-text p,
+  .info-profile p {
+    font-size: 17px;
+  }
 }
 
 .about-image {
@@ -317,7 +324,7 @@ body {
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   cursor: default;
 }
 
@@ -382,6 +389,19 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .galeri-section,
+  .about-section {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 100px;
+  }
+
+  .footer-top {
+    padding-bottom: 50px;
+  }
+}
+
 .gallery-page {
   background-color: #1a1a1a;
   padding: 60px 5px 60px 5px;
@@ -442,6 +462,13 @@ body {
 .gallery-item:hover .caption {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .gallery-item .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .anggota-section {
