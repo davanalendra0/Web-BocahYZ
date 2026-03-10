@@ -112,12 +112,6 @@ body {
   cursor: default;
 }
 
-.home-overlay h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
 .home-overlay h1 {
   font-size: 64px;
   font-weight: 800;
@@ -550,26 +544,29 @@ body {
 .profile-orang {
   background: #1a1a1a;
   color: #f0f0f0;
-  padding: 60px 20px 30px;;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px 30px;
+  margin-top: 35px;
 }
 
 .container-profile {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
   flex-wrap: wrap;
-  max-width: 1100px;
 }
 
 .container-profile img {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .info-profile {
@@ -577,33 +574,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 200px;
 }
 
 .info-profile .role {
-  font-size: 14px;
+  font-size: 13px;
   color: #b39ddb;
   cursor: default;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .info-profile h2 {
-  font-size: 24px;
-  margin: 10px 0;
+  font-size: 26px;
+  margin: 8px 0 6px;
   color: #e0e0e0;
   cursor: default;
 }
 
 .info-profile p {
   color: #ccc;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
-  max-width: 800px;
   cursor: default;
+  margin: 0;
 }
 
 .sosial-link {
-  margin-top: 15px;
+  margin-top: 18px;
   display: flex;
-  gap: 15px;
+  gap: 12px;
 }
 
 .sosial-link a {
@@ -630,23 +630,22 @@ body {
 .pemisah {
   border: none;
   border-top: 2px solid #3a3a3a;
-  margin: 40px auto;
+  margin: 0 auto;
   width: 90%;
   background: transparent;
 }
 
 .galeri-personal {
-  padding: 40px 30px 60px;
+  padding: 50px 40px 70px;
   background-color: #1a1a1a;
 }
 
 .foto-grid-personal {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
+  margin: 0 auto;
 }
 
 .foto-grid-personal img {
@@ -654,10 +653,35 @@ body {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(98, 0, 255, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(98, 0, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
 }
 
 .foto-grid-personal img:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(98, 0, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .container-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-profile {
+    align-items: center;
+  }
+
+  .foto-grid-personal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .foto-grid-personal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 }
