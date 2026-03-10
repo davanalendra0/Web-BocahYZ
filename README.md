@@ -24,8 +24,7 @@ Website Yayasan Zulka adalah situs profil organisasi non-profit yang dibuat untu
 <h2>Link Live</h2>
 
 Website dapat diakses melalui:
-[https://web-bocah-yz.vercel.app](https://bocah-yz.vercel.app/)
-
+https://bocah-yz.vercel.app/
 
 <h2>Peran AI (ChatGPT)</h2>
 
